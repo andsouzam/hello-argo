@@ -1,0 +1,17 @@
+* buildar imagem com 
+- $ docker build -t jeysonlr/argocd:latest .
+
+* subir imagem para dockerhub
+- docker login (inserir credenciais de login)
+- docker push jeysonlr/argocd:latest
+
+* subir container
+
+* aplicar deployment
+- kubectl apply -f k8s/deployment.yaml
+
+* aplicar service
+- kubectl apply -f k8s/service.yaml
+
+* consumir aplicacao
+- kubectl port-forward svc/goapp 8080:8080
