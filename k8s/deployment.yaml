@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helo-argo
+  name: hello-argo
 spec:
   replicas: 2
   selector:
@@ -13,7 +13,7 @@ spec:
         app: goapp
     spec:
       containers:
-      - name: helo-argo
+      - name: hello-argo
         image: goapp
         resources:
           limits:
