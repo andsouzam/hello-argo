@@ -8,3 +8,4 @@ $ docker build -t jeysonlr/argocd:latest .
 $ docker run --name=argocd --rm -p 8080:8080  jeysonlr/argocd:latest
 
 ```
+## linha em branco
