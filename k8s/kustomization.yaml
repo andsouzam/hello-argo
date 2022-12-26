@@ -4,7 +4,7 @@ resources:
 - deployment.yaml
 - service.yaml
 
-namespace: helo-argo
+namespace: hello-argo
 
 images:
 - name: goapp
